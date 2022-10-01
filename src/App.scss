@@ -1,0 +1,91 @@
+@import '../src/utils/scss/normalize.scss';
+@import '../src/utils/scss/fonts.scss';
+@import '../src/utils/scss/var.scss';
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: disc;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(23,33,43,255) !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+.prive{
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 150px;
+
+  &_h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  &_span{
+    color:#5f9fd8;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+
+  &_input{
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #5f9fd8;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 8px 0;
+    margin-top: -10px;
+    margin-bottom: 40px;
+  }
+
+  &_btn{
+    width: 100%;
+    border: none;
+    background-color: #2f6ea5;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+    &:hover{
+      background-color: #5f9fd8;
+      cursor: pointer;
+    }
+  }
+
+  &_link{
+    color: #5f9fd8;
+    margin-left: 100px;
+  }
+
+  .not{
+    color: #ef5959;
+  }
+
+  .notInput {
+    border-bottom: 3px solid #ef5959;
+    color: #ef5959;
+  }
+}

@@ -1,0 +1,140 @@
+@import "../../utils/scss/var.scss";
+
+
+
+.header{
+    width: 260px;
+    border-right: 1px solid black;
+    position: absolute;
+    height: 96.8%;
+    overflow: auto;
+    left: 0;
+    padding-top: 70px;
+    overflow-y: auto;
+    scrollbar-color: transparrent #aaa;
+    scrollbar-width: thin;
+
+    &_top{
+        display: flex;
+        align-items: center;
+        padding: 15.5px;
+        position: fixed;
+        z-index: 10000;
+        top: 23px;
+        background-color: rgba(23,33,43,255) !important;
+    }
+
+    .listActive{
+        background-color: #2b5278 !important;
+        color: #fff !important;
+
+        &:hover{
+            background-color: #2b5278 !important;
+        }
+
+        .header_data{
+            color: #fff !important;
+        }
+
+        .header_text{
+            color: #fff !important;
+            &-text{
+                color: #fff !important;
+            }
+        }
+    }
+
+    &_input{
+        border: none;
+        outline: none;
+        padding: 8px 15px;
+        width: 150px;
+        margin-left: 18px;
+        margin-right: 20px;
+        border-radius: 5px;
+        background-color: #242f3d;
+        color: #fff;        
+    }
+
+    &_menu{
+        color: #52616e !important;
+        cursor: pointer;
+        font-size: 20px;
+        &:hover{
+            color:#fff !important;
+        }
+    }
+
+    &_list{
+        list-style-type: none;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #202b36;
+        }
+    }
+
+    &_img{
+        border-radius: 50%;
+    }
+
+    &_h3{
+        position: absolute;
+        top: 5px;
+        overflow: hidden;
+        width: 60%;
+        color: #fff;
+    }
+    
+    &_text{
+        position: absolute;
+        bottom: 10px;
+        width: 52%;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #687889;
+        text-overflow: ellipsis;
+        
+        &-text{
+            position: absolute;
+            bottom: 10px;
+            width: 67%;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #687889;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &_check{
+        position: absolute;
+        right: 48px;
+        top: 8px;
+    }
+
+    &_data{
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        color: #687889;
+    }
+
+    &_sms{
+        position: absolute;
+        right: 10px;
+        border-radius: 50%;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        color: white;
+        background-color: #4082bc;
+    }
+}
