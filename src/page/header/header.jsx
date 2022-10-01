@@ -23,7 +23,7 @@ function Header() {
         if (search.current.value == "") {
             setbazacha(mainData.users)
         } else {
-           const natija = mainData.users.filter(e => e.name.toLowerCase().includes(search.current.value.toLowerCase()))
+           const natija = mainData.users.filter(e => e.nik.toLowerCase().includes(search.current.value.toLowerCase()))
            setbazacha(natija)
         }
     }
@@ -44,7 +44,7 @@ function Header() {
         },
         })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((json) => setChat(json));
         setbazacha(baza.users)
         setOzgar(ozgar + 1)
     }

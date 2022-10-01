@@ -1,1 +1,182 @@
-@import "../../utils/scss/var.scss"
+@import "../../utils/scss/var.scss";
+
+
+
+.none {
+    display: none;
+}
+
+.footerSection{
+    position: absolute;
+    right: 0;
+    background-color: rgba(23,33,43,255) !important;
+    width: 400px;
+    padding: 20px;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 23px;
+
+    svg{
+        color: #fff;
+    }
+
+    .hr{
+        width: 100%;
+        height: 10px;
+        border: none;
+        background-color: #242f3d;
+        position: absolute;
+        left: 0;
+        top: 170px;
+    }
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4 { 
+            margin-top: 5px;
+            color: #fff;
+        }
+    }
+}
+
+.footer{
+    &_user{
+        display: flex;
+        margin-top: 30px;
+        img{
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        h2{
+            margin: 0;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        p{
+            color: #52616e;
+        }
+    }
+
+    &_info{
+        padding-left: 50px;
+        margin-top: 55px;
+
+        svg{
+            position: absolute;
+            left: 25px;
+            top: 220px;
+        }
+
+        p{
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        span{
+            color: rgba(255, 255, 255, 0.426);
+        }
+
+        .he{
+            position: absolute;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.167);
+            height: 3px;
+            top: 390px;
+        }
+
+    }
+    .hrData{
+        width: 100%;
+        height: 10px;
+        border: none;
+        background-color: #242f3d;
+        position: absolute;
+        left: 0;
+        top: 460px;
+    } 
+
+    &_qon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-left: 10px;
+
+        &:hover{
+            cursor: pointer;
+
+        }
+
+        .qonsss{
+            color: #fff;
+            margin-left: -172px;
+        }
+
+        .ota{
+            width: 35px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            position: relative;
+            background-color: #aaa;
+        }
+        
+        .bola{
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid rgb(100, 100, 255);
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.928);
+            z-index: 3;
+        }
+        
+        .input{
+            display: none;
+        }
+        
+        
+        .bg-sun{
+            background-color: #aaa;
+            width: 35px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .bg-moon{
+            background-color: rgb(100, 100, 255);
+            width: 35px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .input:checked ~ .bola{
+            margin-left: 17px;
+        }
+        
+        .input:checked ~ .bg-moon{
+            z-index: 2;
+        }
+        .input:checked ~ .bg-sun{
+            z-index: 1;
+        }
+        
+    }
+}

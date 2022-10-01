@@ -8,7 +8,8 @@ export const StatePriveder = ({ children }) => {
     const [mainData, setMainData] = useState(baza || "");
     const [port, setPort] = useState("http://localhost:6060");
     const [ozgar, setOzgar] = useState(0);
-    const [chat, setChat] = useState([]);
+    const [chat, setChat] = useState({});
+    const [yesFooter, setYesFooter] = useState(true);
 
     useEffect(() => {
         if (mainData) {
@@ -24,7 +25,7 @@ export const StatePriveder = ({ children }) => {
         }
     }, [mainData]);
 
-    const data = {mainData, setMainData, ozgar, setOzgar, port, chat, setChat}
+    const data = {mainData, setMainData, ozgar, setOzgar, port, chat, setChat, yesFooter, setYesFooter}
 
     return <State.Provider value={data}>{ children }</State.Provider>
 }

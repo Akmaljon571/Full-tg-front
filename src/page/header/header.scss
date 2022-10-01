@@ -4,15 +4,16 @@
 
 .header{
     width: 260px;
-    border-right: 1px solid black;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
     position: absolute;
-    height: 96.8%;
+    height: 100%;
     overflow: auto;
     left: 0;
     padding-top: 70px;
     overflow-y: auto;
     scrollbar-color: transparrent #aaa;
     scrollbar-width: thin;
+    background-color: rgba(23,33,43,255) !important;
 
     &_top{
         display: flex;

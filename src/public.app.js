@@ -5,7 +5,7 @@ import Prive from "./prive.app";
 function Public() {
     const { mainData } = useStart()
     return (
-        <div style={{display: "flex", "padding-left": "260px"}}>
+        <div className="Mai-Father">
             {!mainData?.token ?
                  <Prive /> :
                  <>
