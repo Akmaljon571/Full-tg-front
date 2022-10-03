@@ -14,7 +14,7 @@ function Header() {
     if (!ozgar) {
         setOzgar(ozgar+1)
     }
-
+    console.log(chat);
     useEffect(() => {
        setbazacha(mainData?.users)
     }, [ozgar, mainData]);
@@ -27,10 +27,10 @@ function Header() {
            setbazacha(natija)
         }
     }
-
     const lock = () => {
         setMainData("")
         localStorage.clear()
+        setChat("")
         navigate("/")
     }
 
@@ -48,7 +48,6 @@ function Header() {
         setbazacha(baza.users)
         setOzgar(ozgar + 1)
     }
-    
     return (
         <header className="header">
             <div className="header_top">

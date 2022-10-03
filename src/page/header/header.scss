@@ -13,7 +13,7 @@
     overflow-y: auto;
     scrollbar-color: transparrent #aaa;
     scrollbar-width: thin;
-    background-color: rgba(23,33,43,255) !important;
+    background-color: rgb(28, 39, 49) !important;
 
     &_top{
         display: flex;
@@ -22,7 +22,7 @@
         position: fixed;
         z-index: 10000;
         top: 23px;
-        background-color: rgba(23,33,43,255) !important;
+        background-color: rgb(28, 39, 49) !important;
     }
 
     .listActive{
@@ -58,7 +58,7 @@
     }
 
     &_menu{
-        color: #52616e !important;
+        color: #78848e !important;
         cursor: pointer;
         font-size: 20px;
         &:hover{
@@ -99,7 +99,7 @@
         width: 52%;
         white-space: nowrap;
         overflow: hidden;
-        color: #687889;
+        color: #8190a1;
         text-overflow: ellipsis;
         
         &-text{
@@ -108,7 +108,7 @@
             width: 67%;
             white-space: nowrap;
             overflow: hidden;
-            color: #687889;
+            color: #8190a1;
             text-overflow: ellipsis;
         }
     }
